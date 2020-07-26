@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		183B103024BF62B8007B223C /* CoreDataList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 183B102E24BF62B8007B223C /* CoreDataList.xcdatamodeld */; };
 		183B103224BF62BB007B223C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183B103124BF62BB007B223C /* Assets.xcassets */; };
 		183B103524BF62BB007B223C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183B103324BF62BB007B223C /* LaunchScreen.storyboard */; };
+		184F919E24C0BB5300C98EBC /* SASCoreData in Frameworks */ = {isa = PBXBuildFile; productRef = 184F919D24C0BB5300C98EBC /* SASCoreData */; };
+		1860F95F24BF63BB00690661 /* SASLogixsPack in Frameworks */ = {isa = PBXBuildFile; productRef = 1860F95E24BF63BB00690661 /* SASLogixsPack */; };
+		1860F96124BF672700690661 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860F96024BF672700690661 /* ViewModel.swift */; };
+		1860F96324BF681700690661 /* ViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860F96224BF681700690661 /* ViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		183B103124BF62BB007B223C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183B103424BF62BB007B223C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183B103624BF62BB007B223C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183B103C24BF6339007B223C /* SASLogixsPack */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SASLogixsPack; path = ../Frameworks_and_packages/SASLogixsPack; sourceTree = "<group>"; };
+		184F919C24C0BB2800C98EBC /* SASCoreData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SASCoreData; path = ../Frameworks_and_packages/SASCoreData; sourceTree = "<group>"; };
+		1860F96024BF672700690661 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1860F96224BF681700690661 /* ViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1860F95F24BF63BB00690661 /* SASLogixsPack in Frameworks */,
+				184F919E24C0BB5300C98EBC /* SASCoreData in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +52,11 @@
 		183B101924BF62B7007B223C = {
 			isa = PBXGroup;
 			children = (
+				184F919C24C0BB2800C98EBC /* SASCoreData */,
+				183B103C24BF6339007B223C /* SASLogixsPack */,
 				183B102424BF62B8007B223C /* CoreDataList */,
 				183B102324BF62B8007B223C /* Products */,
+				1860F95D24BF63BB00690661 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +74,8 @@
 				183B102524BF62B8007B223C /* AppDelegate.swift */,
 				183B102724BF62B8007B223C /* SceneDelegate.swift */,
 				183B102924BF62B8007B223C /* ViewController.swift */,
+				1860F96224BF681700690661 /* ViewTableViewCell.swift */,
+				1860F96024BF672700690661 /* ViewModel.swift */,
 				183B102B24BF62B8007B223C /* Main.storyboard */,
 				183B103124BF62BB007B223C /* Assets.xcassets */,
 				183B103324BF62BB007B223C /* LaunchScreen.storyboard */,
@@ -68,6 +83,13 @@
 				183B102E24BF62B8007B223C /* CoreDataList.xcdatamodeld */,
 			);
 			path = CoreDataList;
+			sourceTree = "<group>";
+		};
+		1860F95D24BF63BB00690661 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +108,10 @@
 			dependencies = (
 			);
 			name = CoreDataList;
+			packageProductDependencies = (
+				1860F95E24BF63BB00690661 /* SASLogixsPack */,
+				184F919D24C0BB5300C98EBC /* SASCoreData */,
+			);
 			productName = CoreDataList;
 			productReference = 183B102224BF62B8007B223C /* CoreDataList.app */;
 			productType = "com.apple.product-type.application";
@@ -141,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1860F96124BF672700690661 /* ViewModel.swift in Sources */,
 				183B103024BF62B8007B223C /* CoreDataList.xcdatamodeld in Sources */,
+				1860F96324BF681700690661 /* ViewTableViewCell.swift in Sources */,
 				183B102A24BF62B8007B223C /* ViewController.swift in Sources */,
 				183B102624BF62B8007B223C /* AppDelegate.swift in Sources */,
 				183B102824BF62B8007B223C /* SceneDelegate.swift in Sources */,
@@ -342,6 +370,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		184F919D24C0BB5300C98EBC /* SASCoreData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SASCoreData;
+		};
+		1860F95E24BF63BB00690661 /* SASLogixsPack */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SASLogixsPack;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		183B102E24BF62B8007B223C /* CoreDataList.xcdatamodeld */ = {
